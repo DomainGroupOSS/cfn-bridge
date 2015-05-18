@@ -27,7 +27,9 @@ module CloudFormation
       end
 
       def poll
-        message = queue.receive_message(visibility_timeout=1800)
+        message = queue.receive_message({
+          :visibility_timeout => 1800
+        })
 
         unless message
           logger.info("No messages found, looping again")

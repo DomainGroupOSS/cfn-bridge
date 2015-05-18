@@ -6,7 +6,7 @@ require 'cloud_formation/bridge/version'
 Gem::Specification.new do |spec|
   spec.name          = "cfn-bridge"
   spec.version       = CloudFormation::Bridge::VERSION
-  spec.authors       = ["Maurício Linhares"]
+  spec.authors       = ["Mauricio Linhares"]
   spec.email         = ["mlinhares@neat.com"]
   spec.summary       = %q{Implements custom operations for CF calls}
   spec.description   = %q{Implements custom operations for CF calls}
