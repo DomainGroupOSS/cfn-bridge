@@ -26,6 +26,8 @@ describe CloudFormation::Bridge::Resources::ElastiCacheReplicationGroup do
                                   replication_group_id: replication_group_id,
                                   primary_cluster_id: "cluster-id-here",
                                   replication_group_description: "Sample replication group for the redis instances",
+                                  automatic_failover_enabled: false,
+                                  num_cache_clusters: 1
                                 )
 
       stub_describe_replication_group
